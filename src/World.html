@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <div class="container">
+      <canvas id="webgl" width="1000" height="800">
+        Please use a browser that supports "canvas"
+      </canvas>
+
+      <p id="numdot">XXX</p>
+    
+
+      <!-- <p>Red <input type="range" min="0" max="100" value="100" class="slider" id="redSlide"></p>
+      <p>Green <input type="range" min="0" max="100" value="100" class="slider" id="greenSlide"></p>
+      <p>Blue <input type="range" min="0" max="100" value="100" class="slider" id="blueSlide"></p> -->
+      
+
+      <p></p>Controls:  WASD to move, Q and E to look left and right, Z anf C to look up and down.</p>
+      <p>Normal: 
+        <input type="button" id="normalOn" value="Normal On">
+        <input type="button" id="normalOff" value="Normal Off"></p>
+      <p>Animation:
+        <input type="button" id="animateOn" value="Animate On">
+        <input type="button" id="animateOff" value="Animate Off"></p>
+      </p>
+      <p> Light Switch:
+        <input type="button" id="lightOn" value="Light On">
+        <input type="button" id="lightOff" value="Light Off">
+      </p>
+      <p>Spot Light Switch:
+        <input type="button" id="spotlightOn" value="Spot Light On">
+        <input type="button" id="spotlightOff" value="Spot Light Off">
+      </p>
+      <p>
+        Color Hue: <input type="range" min="0" max="360" value="0" class="slider" id="lightColorHue">
+      </p>
+      <p>
+        Light X: <input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideX">
+        Light Y: <input type="range" min="-250" max="250" value="100" class="slider" id="lightSlideY">
+        Light Z: <input type="range" min="-250" max="250" value="-200" class="slider" id="lightSlideZ">
+      </p>
+      <p>
+        Spot Light X: <input type="range" id="spotSlideX" min="-400" max="400" step="0.1" value="0">
+        
+        Spot Light Y: <input type="range" id="spotSlideY" min="0" max="700" step="0.1" value="600">
+        Spot Light Z: <input type="range" id="spotSlideZ" min="-400" max="400" step="0.1" value="0">
+
+      </p>
+  
+
+      
+      <!-- <p>Size <input type="range" min="5" max="40" value="0" class="slider" id="sizeSlide"></p>
+      <p>Segments <input type="range" min="3" max="30" value="3" class="slider" id="segSlide"></p> -->
+    </div>
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="World.js"></script>
+    <!-- <script src="Circle.js"></script> -->
+    <script src="Sphere.js"></script>
+    <script src="Setup.js"></script>
+    <script src="Points.js"></script>
+    <script src="Cube.js"></script>
+    <script src="User.js"></script>
+    <script src="Render.js"></script>
+    <script src="Textures.js"></script>
+  </body>
+</html>
